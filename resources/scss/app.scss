@@ -1,0 +1,294 @@
+@import '~bootstrap/scss/bootstrap';
+
+//import variables
+@import'./variables/variables.scss';
+
+//general
+body {
+    background-color: $dark;
+    font-family: $open-sans;
+}
+
+main {
+    min-height: 90vh;
+}
+
+#app {
+    height: 100%;
+}
+
+.navbar {
+    height: 10vh;
+    background-color: $white;
+}
+
+.navbar-nav {
+    li {
+
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+            color: $light-green !important;
+            border-bottom: 2px solid $light-green;
+            transition: 300ms linear;
+        }
+    }
+
+    .my-link {
+        border: 1px solid transparent;
+        font-size: 1.5rem;
+    }
+}
+
+#index-guest {
+    height: 80vh !important;
+
+    h1 {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+}
+
+.text-my-white {
+    color: $white !important;
+}
+
+.text-my-dark {
+    color: $dark;
+}
+
+.text-my-green {
+    color: $light-green;
+}
+
+.my-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my-btn {
+    width: max-content;
+    padding: 10px;
+    border: 1px solid transparent;
+    background-color: $light-green;
+
+    &:hover {
+        background-color: $dark;
+        color: $light-green;
+        border: 1px solid $light-green;
+        transition: 200ms linear;
+    }
+
+    a {
+        color: $dark;
+        text-decoration: none;
+
+        &:hover {
+            color: $light-green;
+            transition: 200ms linear;
+        }
+    }
+}
+
+.my-lineheight {
+    line-height: 3rem;
+}
+
+//header
+
+.container-img-logo {
+    width: 5rem;
+}
+
+// index admin
+
+.emoji-index {
+
+    img {
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+        z-index: 1000;
+    }
+}
+
+#index-admin{
+
+
+
+    .my-title-link {
+        color: $white;
+        font-weight: bold;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+            color: $light-green;
+            border-bottom: 1px solid $light-green;
+            transition: 300ms linear;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    th {
+        color: $light-green;
+    }
+
+    i {
+        color: $white;
+
+        &:hover {
+            color: light-green;
+            transition: 300ms linear;
+        }
+    }
+}
+
+//create admin
+#create-admin {
+
+    input, textarea {
+        background-color: $dark;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid $light-green;
+        color: $white
+    }
+
+}
+
+// admin show
+#admin-show {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+// login page
+
+#my-login-page {
+    background-color: $dark !important;
+    color: $white;
+
+    .card-header {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    label {
+        color: $light-green;
+    }
+
+    input.form-control {
+        border: none;
+        border-radius: 0;
+        background-color: $dark;
+        color: $white;
+        border-bottom: 1px solid $light-green;
+    }
+
+    .container-emogi-login {
+        position: relative;
+
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            transform: rotate(180deg);
+        }
+
+    }
+}
+
+// show technologies
+
+.link-technologies {
+    text-decoration: none;
+    font-size: 2rem;
+    border-bottom: 1px solid transparent;
+    color: $white;
+
+     &:hover {
+        border-bottom: 1px solid $light-green;
+        color: $light-green;
+        transition: 300ms linear;
+     }
+}
+
+// index devices
+
+.link-devices {
+    color: $white;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+        color: $light-green;
+        border-bottom: 1px solid $light-green !important;
+        transition: 300ms linear;
+        cursor: pointer;
+    }
+
+}
+
+//about page
+
+.section-guests-pages {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.section-pages-2 {
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: $white;
+
+    p, h1 {
+        color: $dark;
+    }
+}
+
+.title-guests {
+    font-size: 6rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+.paragrafh-about {
+    font-size: 1.5rem;
+}
+
+// project page for users
+
+#sectionwhite {
+    background-color: #fff;
+    height: 100vh;
+
+    h1 {
+        color: $dark;
+    }
+}
+
+// effetcs
+
+.my-active {
+
+    border-bottom: 1px solid $light-green;
+    color: $light-green;
+
+}
+
+// .undeerline-hover :hover{
+//     transform: translate3d(100%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+//     transform-style: preserve-3d;
+//     transition: all 0.3s ease-in-out 0s;
+// }
